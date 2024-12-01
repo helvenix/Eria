@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/font/Poppins-Regular.ttf);
+}
+
+::selection{
+    color: #01796F;
+    background-color: #ddfff6;
+}
+
+#container {
+    height: 100%; width: 100%;
+    background-color: #01796F; 
+    display: flex; font-family: 'Poppins';
+    justify-content: center; align-items: center;
+}
+
+#eria {
+    width: 24vh; height: 24vh; background-color: #ddfff6; 
+    user-select: none; display: flex; border-radius: 50%; 
+    font-size: 3vh; cursor: default; color: #01796F;
+    justify-content: center; align-items: center; 
+    box-shadow: 0 0 30px -12px #000000;
+    font-weight: 900; 
+}
+
+#input {
+    width: 24vh; box-sizing: border-box;
+    position: absolute; bottom: 20%;
+}
+
+#input input{
+    height: 4vh; background-color: #01796F;
+    box-sizing: border-box; border: none; border-bottom: 2px dotted #ddfff6;
+    width: 100%; padding-left: 10px; padding-right: 10px; color: #ddfff6;
+}
+
+#input input:focus {
+    outline: none; border-bottom-style: solid;
+}
+
+#input #button { 
+    display: flex; justify-content: center; align-items: center;
+    position: relative; font-size: 1.4vh; user-select: none;
+    color: #ddfff6; left: calc(50% - 6vh); cursor: pointer; 
+    height: 3.6vh; width: 12vh; border: 2px solid #ddfff6; box-sizing: border-box;
+    background-color: #01796F; top: 4vh;
+    transition: .2s ease-in-out;  
+}
+
+#input #button:hover {
+    margin-bottom: -0.4vh; color: #01796F;
+    height: 4vh; width: 24vh; top: 3.8vh; left: calc(50% - 12vh);
+    transition-duration: .2s;  
+}
+
+#input #button .bg1{
+    background-color: #ddfff6; position: absolute; top: 0; left: 50%;
+    width: 0; height: 100%; transition: .3s ease-in-out;
+}
+
+#input #button:hover .bg1{
+    width: 100%;
+    left: 0;
+}
+
+#input #button h1{
+    transition: .3s ease;
+    position: relative; z-index: 1;
+}
+
+#input #button .bg2 {
+    background-color: #1b1b1b; position: absolute; top: 0; left: 50%;
+    width: 0; height: 100%; transition: .1s ease;
+}
+
+#input #button:active .bg2 {
+    width: 100%; left: 0;
+    transition-duration: 1s;
+}
+
+#input #button:active {
+    transition-duration: 1s;  
+    border: #1b1b1b;
+}
+
+#input #button:active h1{
+    transition-duration: 1s;
+    color: #ddfff6;
+}
+
+#response {
+    display: flex; justify-content: center; align-items: center;
+    height: 30%; width: 64vh;
+    position: absolute; top: 5%; color: #ddfff6;
+}
+
+#logo {
+    width: 18vh; position: absolute; top: -3vh; left: 4vh;
+}
+
+#lefticon {
+    position: absolute; top: 34vh; left: 36vh; height: 24vh; 
+    display: flex; width: 4vh; flex-direction: column;
+}
+
+#lefticon i {
+    display: flex; width: 100%;
+    font-size: 4vh; color: #ddfff6;
+    margin-top: 2vh; margin-bottom: 2vh;
+}
+
+#leftlabel {
+    position: absolute; top: 34vh; left: 42vh; height: 24vh; 
+    display: flex; width: 4vh; flex-direction: column;
+}
+
+#leftlabel p {
+    display: flex; width: 100%;
+    font-size: 2vh; color: #ddfff6;
+    margin-top: 3vh; margin-bottom: 3vh;
+}
+
+#righticon {
+    position: absolute; top: 38vh; right: 36vh; height: 24vh; 
+    display: flex; width: 4vh; flex-direction: column;
+}
+
+#righticon i, #righticon p {
+    display: flex; width: 100%;
+    font-size: 4vh; color: #ddfff6;
+    margin-top: 2vh; margin-bottom: 2vh;
+}
+
+#righticon sub {
+    font-size: 2vh; line-height: 6vh;
+    margin: none;
+}
+
+#righticon p {
+    margin-bottom: 0vh;
+}
+
+#rightlabel {
+    position: absolute; top: 38vh; right: 42vh; height: 24vh; 
+    display: flex; width: 8vh; flex-direction: column;
+}
+
+#rightlabel p {
+    display: flex; width: 100%;
+    font-size: 2vh; color: #ddfff6;
+    margin-top: 3vh; margin-bottom: 3vh;
+}
+
