@@ -17,9 +17,11 @@ recognition.continous = true;
 recognition.interimResults = true;
 
 function speak(voice, output){
-    const utterance = new SpeechSynthesisUtterance(output);
-    utterance.voice = voice
-    speechSynthesis.speak(utterance);
+    if(voice){
+        const utterance = new SpeechSynthesisUtterance(output);
+        utterance.voice = voice
+        speechSynthesis.speak(utterance);
+    }
 }
 
 async function SubmitInput(data, setData, memory, record, feedback, clearInput, voice){
