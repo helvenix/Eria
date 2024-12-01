@@ -1,8 +1,3 @@
-# React + Vite
+# ERIA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ERIA is an intelligent AI-powered chatbot that leverages OpenAI's GPT-4 API to provide dynamic, human-like conversations. It’s designed to handle various queries, assist in multiple tasks, and offer personalized interactions across diverse use cases. Whether for customer service, educational assistance, or entertainment, ERIA is a versatile tool that can integrate with any application requiring conversational AI.
