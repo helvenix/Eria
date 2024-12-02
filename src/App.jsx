@@ -43,6 +43,10 @@ async function SubmitInput(data, setData, memory, record, feedback, clearInput, 
         })
         request.push({
             role: "system",
+            content: `${import.meta.env.VITE_THANKS}`
+        })
+        request.push({
+            role: "system",
             content: condition
         })
         console.log(request)
