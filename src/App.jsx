@@ -108,11 +108,11 @@ function App() {
     const [data, setData] = useState([0, 0, 0, 0])
     const [memory, setMemory] = useState([]);
     const [voices, setVoices] = useState();
+    console.log(voices);
     const language = 'id-ID'
     const availableVoices = voices?.filter(({ lang }) => lang === language)[0]
     useEffect(() => {
         const voices = window.speechSynthesis.getVoices();
-        console.log(voices);
         if(Array.isArray(voices) && voices.length > 0){
             setVoices(voices)
             return;
