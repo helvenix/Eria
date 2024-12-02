@@ -112,6 +112,7 @@ function App() {
     const availableVoices = voices?.filter(({ lang }) => lang === language)[0]
     useEffect(() => {
         const voices = window.speechSynthesis.getVoices();
+        console.log(voices);
         if(Array.isArray(voices) && voices.length > 0){
             setVoices(voices)
             return;
